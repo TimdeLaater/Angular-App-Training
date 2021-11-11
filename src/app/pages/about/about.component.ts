@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core'
-import { UseCase } from '../usecase.model'
+import { UseCase } from './usecases/usecase.model'
 
 @Component({
-  selector: 'app-about-usecases',
-  templateUrl: './usecases.component.html'
+  selector: 'app-about',
+  templateUrl: './about.component.html'
 })
-export class UsecasesComponent implements OnInit {
+export class AboutComponent implements OnInit {
   readonly PLAIN_USER = 'Reguliere gebruiker'
   readonly ADMIN_USER = 'Administrator'
 

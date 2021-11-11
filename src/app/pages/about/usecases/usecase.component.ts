@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core'
-import { UseCase } from '../../usecase.model'
+import { UseCase } from './usecase.model'
 
 @Component({
   selector: 'app-usecase',
