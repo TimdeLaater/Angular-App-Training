@@ -43,7 +43,7 @@ unittests:
     - npm run test
     # - npm run sonar
   only:
-    - release
+    - master
 
 #
 # Run end-to-end tests
