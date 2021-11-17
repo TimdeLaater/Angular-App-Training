@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/my-app",
+    "public": "dist/angular-app-training",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -8,7 +8,7 @@
     ],
     "rewrites": [
       {
-        "source": "**",
+        "source": "src",
         "destination": "/index.html"
       }
     ]
