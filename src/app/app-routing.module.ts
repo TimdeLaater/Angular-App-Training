@@ -1,3 +1,4 @@
+import { UserComponent } from './user/user/user.component'
 import { NgModule } from '@angular/core'
 import { Routes, RouterModule } from '@angular/router'
 import { DashboardComponent } from './core/dashboard/dashboard.component'
@@ -11,7 +12,9 @@ const routes: Routes = [
     children: [
       { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
       { path: 'dashboard', component: DashboardComponent },
-      { path: 'about', component: AboutComponent }
+      { path: 'about', component: AboutComponent },
+      { path: 'user', component: UserComponent },
+
     ]
   },
   { path: '**', redirectTo: '/' }

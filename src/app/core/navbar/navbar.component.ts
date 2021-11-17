@@ -39,37 +39,16 @@ import { Component, Input, OnInit } from '@angular/core'
                 >Disabled</a
               >
             </li>
-            <li class="nav-item dropdown">
-              <div ngbDropdown class="d-inline-block">
-                <button class="btn btn-link" id="dropdownMenu1" ngbDropdownToggle>Actions</button>
-                <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                  <button
-                    class="dropdown-item"
-                    routerLink="/"
-                    [routerLinkActive]="['active']"
-                    [routerLinkActiveOptions]="{ exact: true }"
-                  >
-                    Action - 1
-                  </button>
-                  <button
-                    class="dropdown-item"
-                    routerLink="/"
-                    [routerLinkActive]="['active']"
-                    [routerLinkActiveOptions]="{ exact: true }"
-                  >
-                    Another Action
-                  </button>
-                  <button
-                    class="dropdown-item"
-                    routerLink="/"
-                    [routerLinkActive]="['active']"
-                    [routerLinkActiveOptions]="{ exact: true }"
-                  >
-                    Something else is here
-                  </button>
-                </div>
-              </div>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                routerLink="user"
+                [routerLinkActive]="['active']"
+                [routerLinkActiveOptions]="{ exact: true }"
+                >User</a
+              >
             </li>
+          
             <li class="nav-item">
               <a
                 class="nav-link"

@@ -1,3 +1,4 @@
+
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
@@ -11,6 +12,9 @@ import { LayoutComponent } from './core/layout/layout.component'
 import { FooterComponent } from './core/footer/footer.component'
 import { AboutComponent } from './pages/about/about.component'
 import { UsecaseComponent } from './pages/about/usecases/usecase.component'
+import { UserListComponent } from './user/userlist/userlist.component';
+import { UserComponent } from './user/user/user.component'
+
 
 @NgModule({
   declarations: [
@@ -20,7 +24,10 @@ import { UsecaseComponent } from './pages/about/usecases/usecase.component'
     DashboardComponent,
     FooterComponent,
     AboutComponent,
-    UsecaseComponent
+    UsecaseComponent,
+    UserListComponent,
+    UserComponent
+    
   ],
   imports: [BrowserModule, RouterModule, NgbModule, AppRoutingModule],
   providers: [],
