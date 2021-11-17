@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core'
 @Component({
   selector: 'app-navbar',
   template: `
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top">
       <div class="container">
         <a
           class="navbar-brand"

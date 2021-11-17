@@ -1,7 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 
 import { AboutComponent } from './about.component'
-import { UsecaseComponent } from './usecases/usecase.component'
 
 describe('UsecaseComponent', () => {
   let component: AboutComponent
@@ -9,7 +8,7 @@ describe('UsecaseComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [AboutComponent, UsecaseComponent]
+      declarations: [AboutComponent]
     }).compileComponents()
   }))
 

@@ -11,7 +11,7 @@ import { NavbarComponent } from './core/navbar/navbar.component'
 import { LayoutComponent } from './core/layout/layout.component'
 import { FooterComponent } from './core/footer/footer.component'
 import { AboutComponent } from './pages/about/about.component'
-import { UsecaseComponent } from './pages/about/usecases/usecase.component'
+
 import { UserListComponent } from './user/userlist/userlist.component';
 import { UserComponent } from './user/user/user.component'
 
@@ -24,7 +24,6 @@ import { UserComponent } from './user/user/user.component'
     DashboardComponent,
     FooterComponent,
     AboutComponent,
-    UsecaseComponent,
     UserListComponent,
     UserComponent
     
