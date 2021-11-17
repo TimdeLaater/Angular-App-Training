@@ -27,10 +27,7 @@ module.exports = function (config) {
     coverageReporter: {
       dir: require('path').join(__dirname, './coverage/my-angular-app'),
       subdir: '.',
-      reporters: [
-        { type: 'html' },
-        { type: 'text-summary' }
-      ]
+      reporters: [{ type: 'html' }, { type: 'text-summary' }]
     },
     reporters: ['progress', 'kjhtml'],
     port: 9876,
@@ -38,7 +35,13 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['Chrome'],
+    customLaunchers: {
+      ChromeHeadlessCI: {
+        base: 'ChromeHeadless',
+        flags: ['--no-sandbox']
+      }
+    },
     singleRun: false,
     restartOnFileChange: true
-  });
-};
+  })
+}
