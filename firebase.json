@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/my-angular-app",
+    "public": "dist/angular-gitlab-heroku",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -8,7 +8,7 @@
     ],
     "rewrites": [
       {
-        "source": "src",
+        "source": "**",
         "destination": "/index.html"
       }
     ]
