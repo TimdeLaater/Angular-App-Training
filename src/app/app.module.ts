@@ -17,6 +17,7 @@ import { AboutComponent } from './pages/about/about.component'
 import { UserListComponent } from './user/userlist/userlist.component';
 import { UserComponent } from './user/user/user.component'
 import { ReactiveFormsModule } from '@angular/forms';
+import { UserEditComponent } from './user/user.edit/user.edit.component';
 
 
 @NgModule({
@@ -30,11 +31,12 @@ import { ReactiveFormsModule } from '@angular/forms';
     UserListComponent,
     UserComponent,
     AddUserComponent,
-    UserDetailComponent
-    
+    UserDetailComponent,
+    UserEditComponent
+
   ],
-  imports: [BrowserModule, RouterModule, NgbModule, AppRoutingModule ,ReactiveFormsModule],
+  imports: [BrowserModule, RouterModule, NgbModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

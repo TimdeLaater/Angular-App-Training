@@ -43,4 +43,8 @@ export class UserService {
     console.log('we zijn wel hier')
     this.users.splice(id - 1);
   }
+  public edit(id: any, user: User): void {
+    user.id = id
+    this.users[id - 1] = user;
+  }
 }
