@@ -1,3 +1,4 @@
+import { UserDetailComponent } from './user/userDetail/user.detail.component';
 import { AddUserComponent } from './user/addUser/add.user.compent';
 import { UserComponent } from './user/user/user.component'
 import { NgModule } from '@angular/core'
@@ -15,7 +16,9 @@ const routes: Routes = [
       { path: 'dashboard', component: DashboardComponent },
       { path: 'about', component: AboutComponent },
       { path: 'user', component: UserComponent },
-      { path: 'user/add', component: AddUserComponent},
+      { path: 'user/add', component: AddUserComponent },
+      { path: 'user/detail/:id', component: UserDetailComponent },
+
 
     ]
   },
@@ -26,4 +29,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

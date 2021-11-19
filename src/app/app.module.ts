@@ -1,3 +1,4 @@
+import { UserDetailComponent } from './user/userDetail/user.detail.component';
 import { AddUserComponent } from './user/addUser/add.user.compent';
 
 import { BrowserModule } from '@angular/platform-browser'
@@ -28,7 +29,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AboutComponent,
     UserListComponent,
     UserComponent,
-    AddUserComponent
+    AddUserComponent,
+    UserDetailComponent
     
   ],
   imports: [BrowserModule, RouterModule, NgbModule, AppRoutingModule ,ReactiveFormsModule],
