@@ -26,7 +26,7 @@ import { Component, Input, OnInit } from '@angular/core'
         <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" routerLink="/" [routerLinkActive]="['active']">Link</a>
+              <a class="nav-link" routerLink="/" [routerLinkActive]="['active']">Home</a>
             </li>
             <li class="nav-item">
               <a
@@ -36,7 +36,7 @@ import { Component, Input, OnInit } from '@angular/core'
                 [routerLinkActiveOptions]="{ exact: true }"
                 tabindex="-1"
                 aria-disabled="true"
-                >Disabled</a
+                >Training</a
               >
             </li>
             <li class="nav-item">
