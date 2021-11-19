@@ -8,10 +8,22 @@ import { Component, OnInit, Input } from '@angular/core'
       <tbody>
         <tr class="table-primary">
           <th scope="row" style="width: 16.66%">Naam</th>
+          <th scope="row" style="width: 16.66%">Email</th>
+          <th scope="row" style="width: 16.66%">Id</th>
+          </tr>
+          <tr>
           <td>
-            <strong>{{ user?.id }} {{ user?.name }}</strong>
+            <a routerLink="detail/{{user?.id}}"><strong>{{ user?.name }}</strong></a>
+            
+          </td>
+          <td>
+            <strong>{{ user?.email }}</strong>
+          </td>
+          <td>
+            <strong>{{ user?.id }}</strong>
           </td>
         </tr>
+        
       </tbody>
     </table>
   `
@@ -19,7 +31,8 @@ import { Component, OnInit, Input } from '@angular/core'
 export class UserListComponent implements OnInit {
   @Input() user: User | undefined
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
+
 }
