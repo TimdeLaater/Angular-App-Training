@@ -1,3 +1,4 @@
+import { AddUserComponent } from './user/addUser/add.user.compent';
 
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
@@ -14,6 +15,7 @@ import { AboutComponent } from './pages/about/about.component'
 
 import { UserListComponent } from './user/userlist/userlist.component';
 import { UserComponent } from './user/user/user.component'
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -25,10 +27,11 @@ import { UserComponent } from './user/user/user.component'
     FooterComponent,
     AboutComponent,
     UserListComponent,
-    UserComponent
+    UserComponent,
+    AddUserComponent
     
   ],
-  imports: [BrowserModule, RouterModule, NgbModule, AppRoutingModule],
+  imports: [BrowserModule, RouterModule, NgbModule, AppRoutingModule ,ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })

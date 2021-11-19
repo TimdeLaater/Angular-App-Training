@@ -8,8 +8,13 @@ import { Component, OnInit, Input } from '@angular/core'
       <tbody>
         <tr class="table-primary">
           <th scope="row" style="width: 16.66%">Naam</th>
+          <th scope="row" style="width: 16.66%">Email</th>
+          <th scope="row" style="width: 16.66%">Id</th>
           <td>
-            <strong>{{ user?.id }} {{ user?.name }}</strong>
+            <strong>{{ user?.name }}</strong>
+          </td>
+          <td>
+            <strong>{{ user?.email }}</strong>
           </td>
         </tr>
       </tbody>

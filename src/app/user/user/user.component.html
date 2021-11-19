@@ -3,7 +3,9 @@
 <br>
 <p>De applicatie bevat de volgende users</p>
 <br>
-<p>Vul hier zelf meer functionaliteit toe.</p>
+<button type="button" class="btn btn-success" routerLink="add"
+    [routerLinkActive]="['active']"
+    [routerLinkActiveOptions]="{ exact: true }">Add user</button>
 <div *ngFor="let UC of users">
     <app-userlist [user]="UC"></app-userlist>
 </div>
