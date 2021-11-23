@@ -5,13 +5,13 @@ import { Component, OnInit, Input } from '@angular/core'
   selector: 'app-userlist',
   template: `
     <table class="table table-sm table-bordered" >
-      <tbody style="color: black;">
-        <tr class="table-primary">
+      <thead class="thead-light">
+        <tr>
           <th scope="row" style="width: 16.66%">Naam</th>
           <th scope="row" style="width: 16.66%">Email</th>
           <th scope="row" style="width: 16.66%">Id</th>
           </tr>
-          <tr style="color: #00ffab;">
+          <tr>
           <td>
             <a routerLink="detail/{{user?.id}}"><strong>{{ user?.name }}</strong></a>
             
@@ -24,7 +24,7 @@ import { Component, OnInit, Input } from '@angular/core'
           </td>
         </tr>
         
-      </tbody>
+      </thead>
     </table>
   `
 })
