@@ -42,6 +42,15 @@ import { Component, Input, OnInit } from '@angular/core'
             <li class="nav-item">
               <a
                 class="nav-link"
+                routerLink="exercises"
+                [routerLinkActive]="['active']"
+                [routerLinkActiveOptions]="{ exact: true }"
+                >Exercises</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
                 routerLink="user"
                 [routerLinkActive]="['active']"
                 [routerLinkActiveOptions]="{ exact: true }"

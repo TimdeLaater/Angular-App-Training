@@ -1,3 +1,4 @@
+import { ExercisesComponent } from './exercises/exercises/exercises.component';
 import { UserEditComponent } from './user/user.edit/user.edit.component';
 import { UserDetailComponent } from './user/userDetail/user.detail.component';
 import { AddUserComponent } from './user/addUser/add.user.compent';
@@ -20,6 +21,8 @@ const routes: Routes = [
       { path: 'user/add', component: AddUserComponent },
       { path: 'user/detail/:id', component: UserDetailComponent },
       { path: 'user/detail/:id/edit', component: UserEditComponent },
+      { path: 'exercises', component: ExercisesComponent },
+
 
 
     ]

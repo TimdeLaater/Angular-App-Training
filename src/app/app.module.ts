@@ -18,6 +18,7 @@ import { UserListComponent } from './user/userlist/userlist.component';
 import { UserComponent } from './user/user/user.component'
 import { ReactiveFormsModule } from '@angular/forms';
 import { UserEditComponent } from './user/user.edit/user.edit.component';
+import { ExercisesComponent } from './exercises/exercises/exercises.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { UserEditComponent } from './user/user.edit/user.edit.component';
     UserComponent,
     AddUserComponent,
     UserDetailComponent,
-    UserEditComponent
+    UserEditComponent,
+    ExercisesComponent
 
   ],
   imports: [BrowserModule, RouterModule, NgbModule, AppRoutingModule, ReactiveFormsModule],
