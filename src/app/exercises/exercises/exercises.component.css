@@ -1,0 +1,8 @@
+.masthead {
+  height: 50vh;
+  min-height: 200px;
+  background-image: url('../../../assets/images/background_angular.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

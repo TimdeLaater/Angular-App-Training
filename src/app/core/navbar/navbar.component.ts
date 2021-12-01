@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core'
 @Component({
   selector: 'app-navbar',
   template: `
-    <nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div class="container">
         <a
           class="navbar-brand"
@@ -42,6 +42,15 @@ import { Component, Input, OnInit } from '@angular/core'
             <li class="nav-item">
               <a
                 class="nav-link"
+                routerLink="exercises"
+                [routerLinkActive]="['active']"
+                [routerLinkActiveOptions]="{ exact: true }"
+                >Exercises</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
                 routerLink="user"
                 [routerLinkActive]="['active']"
                 [routerLinkActiveOptions]="{ exact: true }"
@@ -62,6 +71,7 @@ import { Component, Input, OnInit } from '@angular/core'
         </div>
       </div>
     </nav>
+
   `,
   styles: [
     '.btn-link { color: rgba(255,255,255,.5); text-decoration: none; }',
